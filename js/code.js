@@ -10,13 +10,10 @@ function encontrarLink(link, theme) {
     }
   }
 }
-if (
-  tema1.checked == false &&
-  tema2.checked == false &&
-  tema3.checked == false
-) {
+if (tema1.checked && tema2.checked == false && tema3.checked == false) {
   encontrarLink(links, "theme1");
 }
+
 tema.forEach((radioButon) => {
   console.log(radioButon.id);
   radioButon.addEventListener("change", () => {

@@ -1,0 +1,67 @@
+/* colores de themes */
+:root {
+  /* theme 1*/
+  /* fondo */
+  --fondo: hsl(0, 0%, 90%);
+  --fondo-teclado: hsl(0, 5%, 81%);
+  --fondo-pantalla: hsl(0, 0%, 93%);
+
+  /* botones de reset y del */
+  --boton-2: hsl(185, 42%, 37%);
+  --boton-2-sombra: hsl(185, 58%, 25%);
+
+  /*bonton naranaj*/
+  --boton-3: hsl(25, 98%, 40%);
+  --boton-3-sombra: hsl(6, 70%, 34%);
+
+  /*boton normal*/
+  --boton-1: hsl(45, 7%, 89%);
+  --boton-1-sombra: hsl(35, 11%, 61%);
+  /*color letras*/
+  --letra-botones: hsl(60, 10%, 19%);
+  --blanco: #fff;
+}
+
+body {
+  background-color: var(--fondo);
+  color: (--blanco);
+  font-weight: 700;
+}
+.attribution a {
+  color: hsl(185, 42%, 37%);
+}
+.contenedor__radio {
+  background-color: var(--fondo-teclado);
+}
+.title-themes {
+  color: #000;
+}
+input[type="radio"]:checked + span {
+  background-color: var(--boton-3);
+}
+.contenedor-pantalla {
+  background-color: var(--fondo-pantalla);
+}
+.contenedor__teclado {
+  background-color: var(--fondo-teclado);
+}
+.pantalla {
+  color: var(--letra-botones);
+}
+button {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--boton-1);
+  border-bottom: 5px solid var(--boton-1-sombra);
+  color: var(--letra-botones);
+}
+.boton2 {
+  background-color: var(--boton-2);
+  border-bottom: 5px solid var(--boton-2-sombra);
+  color: var(--blanco);
+}
+.boton3 {
+  background-color: var(--boton-3);
+  border-bottom: 5px solid var(--boton-3-sombra);
+  color: var(--blanco);
+}

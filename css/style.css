@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+/* Aqui comienza el estilo normal */
+.calculadora {
+  height: 100vh;
+  width: 100%;
+}
+.contenedor__calculadora {
+  padding: 30px;
+  height: 100%;
+}
+.items {
+  margin-bottom: 25px;
+}
+.title-themes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.theme {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
+}
+.theme .subTitle-theme {
+  align-self: flex-end;
+  font-size: 11px;
+  text-align: center;
+  width: 55px;
+}
+.interructor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+}
+.numero_theme {
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor__radio {
+  margin-top: 5px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 28px;
+}
+.themes {
+  width: 100%;
+}
+.themes label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.radio {
+  display: block;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+.radio span {
+  display: inline-flex;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 31px;
+}
+
+input[type="radio"]:checked + span {
+  background-color: #555;
+}
+.contenedor-pantalla {
+  height: 80px;
+  width: 100%;
+  background-color: #5553;
+  border-radius: 15px;
+  padding: 20px;
+}
+.pantalla {
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+}
+.contenedor__teclado {
+  border-radius: 15px;
+  margin-bottom: 0;
+  width: 100%;
+  height: calc(100vh - 234px);
+  background-color: #5553;
+  padding: 30px 30px;
+}
+.teclado {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 25px 10px;
+}
+button {
+  font-size: 22px;
+}
+#reset {
+  grid-column: 1 / span 2;
+}
+#igual {
+  grid-column: 3 / span 2;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link title="cambios" rel="stylesheet" href="" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="contenedor__calculadora">
+        <div class="items title-themes">
+          <section class="titule">
+            <h1>calc</h1>
+          </section>
+          <section class="theme">
+            <label class="subTitle-theme" for="">THEME</label>
+            <div class="interructor">
+              <div class="numero_theme">
+                <label for="">1</label>
+                <label for="">2</label>
+                <label for="">3</label>
+              </div>
+              <div class="contenedor__radio">
+                <div class="themes">
+                  <label class="radio" for="theme1">
+                    <input
+                      id="theme1"
+                      class="cambiarTheme"
+                      type="radio"
+                      name="theme"
+                    />
+                    <span></span>
+                  </label>
+                </div>
+                <div class="themes">
+                  <label class="radio" for="theme2">
+                    <input
+                      id="theme2"
+                      class="cambiarTheme"
+                      type="radio"
+                      name="theme"
+                    />
+                    <span></span>
+                  </label>
+                </div>
+                <div class="themes">
+                  <label class="radio" for="theme3">
+                    <input
+                      id="theme3"
+                      class="cambiarTheme"
+                      type="radio"
+                      name="theme"
+                    />
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="items contenedor-pantalla">
+          <div class="pantalla"></div>
+        </div>
+        <div class="items contenedor__teclado">
+          <div class="teclado">
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button id="del" class="funcion boton2">Del</button>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="funcion">+</button>
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="funcion">-</button>
+            <button class="num">.</button>
+            <button class="num">0</button>
+            <button class="funcion">/</button>
+            <button class="funcion">x</button>
+            <button id="reset" class="funcion boton2">RESET</button>
+            <button id="igual" class="funcion boton3">=</button>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">Coded by <a href="#">Anthony Lozano</a>.</div>
+    </div>
+    <script src="js/code.js"></script>
+  </body>
+</html>

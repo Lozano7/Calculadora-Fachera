@@ -21,83 +21,81 @@
     <title>Calculadora</title>
   </head>
   <body>
-    <div class="calculadora">
-      <div class="contenedor__calculadora">
-        <div class="items title-themes">
-          <section class="titule">
-            <h1>calc</h1>
-          </section>
-          <section class="theme">
-            <label class="subTitle-theme" for="">THEME</label>
-            <div class="interructor">
-              <div class="numero_theme">
-                <label for="">1</label>
-                <label for="">2</label>
-                <label for="">3</label>
+    <div class="contenedor__calculadora">
+      <div class="items title-themes">
+        <section class="titule">
+          <h1>calc</h1>
+        </section>
+        <section class="theme">
+          <label class="subTitle-theme" for="">THEME</label>
+          <div class="interructor">
+            <div class="numero_theme">
+              <label for="">1</label>
+              <label for="">2</label>
+              <label for="">3</label>
+            </div>
+            <div class="contenedor__radio">
+              <div class="themes">
+                <label class="radio" for="theme1">
+                  <input
+                    id="theme1"
+                    class="cambiarTheme"
+                    type="radio"
+                    name="theme"
+                    checked
+                  />
+                  <span></span>
+                </label>
               </div>
-              <div class="contenedor__radio">
-                <div class="themes">
-                  <label class="radio" for="theme1">
-                    <input
-                      id="theme1"
-                      class="cambiarTheme"
-                      type="radio"
-                      name="theme"
-                      checked
-                    />
-                    <span></span>
-                  </label>
-                </div>
-                <div class="themes">
-                  <label class="radio" for="theme2">
-                    <input
-                      id="theme2"
-                      class="cambiarTheme"
-                      type="radio"
-                      name="theme"
-                    />
-                    <span></span>
-                  </label>
-                </div>
-                <div class="themes">
-                  <label class="radio" for="theme3">
-                    <input
-                      id="theme3"
-                      class="cambiarTheme"
-                      type="radio"
-                      name="theme"
-                    />
-                    <span></span>
-                  </label>
-                </div>
+              <div class="themes">
+                <label class="radio" for="theme2">
+                  <input
+                    id="theme2"
+                    class="cambiarTheme"
+                    type="radio"
+                    name="theme"
+                  />
+                  <span></span>
+                </label>
+              </div>
+              <div class="themes">
+                <label class="radio" for="theme3">
+                  <input
+                    id="theme3"
+                    class="cambiarTheme"
+                    type="radio"
+                    name="theme"
+                  />
+                  <span></span>
+                </label>
               </div>
             </div>
-          </section>
-        </div>
-        <div class="items contenedor-pantalla">
-          <div class="pantalla"></div>
-        </div>
-        <div class="items contenedor__teclado">
-          <div class="teclado">
-            <button class="num">7</button>
-            <button class="num">8</button>
-            <button class="num">9</button>
-            <button id="del" class="funcion boton2">Del</button>
-            <button class="num">4</button>
-            <button class="num">5</button>
-            <button class="num">6</button>
-            <button class="funcion">+</button>
-            <button class="num">1</button>
-            <button class="num">2</button>
-            <button class="num">3</button>
-            <button class="funcion">-</button>
-            <button class="num">.</button>
-            <button class="num">0</button>
-            <button class="funcion">/</button>
-            <button class="funcion">x</button>
-            <button id="reset" class="funcion boton2">RESET</button>
-            <button id="igual" class="funcion boton3">=</button>
           </div>
+        </section>
+      </div>
+      <div class="contenedor-pantalla">
+        <input type="text" id="pantallaMos" class="pantalla"></input>
+      </div>
+      <div class="contenedor__teclado">
+        <div class="teclado">
+          <button class="num">7</button>
+          <button class="num">8</button>
+          <button class="num">9</button>
+          <button id="del" class="boton2">Del</button>
+          <button class="num">4</button>
+          <button class="num">5</button>
+          <button class="num">6</button>
+          <button class="function">+</button>
+          <button class="num">1</button>
+          <button class="num">2</button>
+          <button class="num">3</button>
+          <button class="function">-</button>
+          <button class="num">.</button>
+          <button class="num">0</button>
+          <button class="function">/</button>
+          <button class="function">x</button>
+          <button id="reset" class="boton2">RESET</button>
+          <button id="igual" class="boton3">=</button>
         </div>
       </div>
       <div class="attribution">Coded by <a href="#">Anthony Lozano</a>.</div>

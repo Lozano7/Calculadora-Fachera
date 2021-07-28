@@ -142,6 +142,7 @@ button {
     margin: auto;
     max-height: 65vh;
     max-width: 50vw;
+    min-height: 470px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -163,11 +164,17 @@ button {
     margin: 15px 0;
   }
   .contenedor__teclado {
-    height: 75%;
+    height: 70%;
     padding: 25px 45px;
   }
   .teclado {
     height: 100%;
     grid-gap: 25px 25px;
+  }
+  .attribution {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    height: 5%;
   }
 }
